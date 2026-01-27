@@ -10,12 +10,18 @@
             <>
             <View style={estilo.container}>
                 <Text style={estilo.title}>
-                    Olá Usuário!
+                    Barro-Macaxeira
                 </Text>
                 
+                <TouchableOpacity style={estilo.Button} onPress={() => router.push("./newAccount")}>
+                <Text style={estilo.p}>
+                        Criar Conta
+                </Text>
+                </TouchableOpacity>
+
                 <TouchableOpacity style={estilo.Button} onPress={() => router.push("./settings")}>
                 <Text style={estilo.p}>
-                        Iniciar Coleta
+                        Fazer Login
                 </Text>
                 </TouchableOpacity>
             </View>

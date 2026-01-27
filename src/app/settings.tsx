@@ -8,13 +8,17 @@ export default function Settings(){
     return (
         <>
             <View style={settingsStyle.container}>
-                <Text>
-                    Config
-                </Text>
+                <View style={settingsStyle.containerUser}>
+                    <Text>
+                        Lucas Ferreira
+                    </Text>
+                </View>
             </View>
 
-            <TouchableOpacity onPress={() => router.back()}>
-
+            <TouchableOpacity style={settingsStyle.Button} onPress={() => router.back()}>
+                <Text>
+                    Tela Anterior
+                </Text>
             </TouchableOpacity>
         </>
     )
@@ -23,5 +27,26 @@ export default function Settings(){
 const settingsStyle = StyleSheet.create({
     container:{
         flex: 1,
-    }
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: 50,
+
+    },
+
+    containerUser:{
+        width: '100%',
+        height: 100,
+        backgroundColor: 'blue',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+
+     Button:{
+            width: 230,
+            backgroundColor: 'blue',
+
+            alignItems: 'center',
+            padding: 15,
+            borderRadius: 10
+        },
 })
