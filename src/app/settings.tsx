@@ -1,6 +1,8 @@
 import { useRouter } from "expo-router";
 import {Text, StyleSheet, View, TouchableOpacity} from "react-native";
 
+import { globalStyles } from "../style/style";
+
 export default function Settings(){
 
     const router = useRouter()
@@ -8,9 +10,9 @@ export default function Settings(){
     return (
         <>
             <View style={settingsStyle.container}>
-                <View style={settingsStyle.containerUser}>
+                <View style={globalStyles.containerUser}>
                     <Text>
-                        Lucas Ferreira
+                        
                     </Text>
                 </View>
             </View>
@@ -33,13 +35,7 @@ const settingsStyle = StyleSheet.create({
 
     },
 
-    containerUser:{
-        width: '100%',
-        height: 100,
-        backgroundColor: 'blue',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
+    
 
      Button:{
             width: 230,

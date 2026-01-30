@@ -1,66 +1,33 @@
-    import { useRouter } from "expo-router";
-    import {Text, StyleSheet, View, TouchableOpacity} from "react-native";
+import { useRouter } from "expo-router";
+import {Text, View, TouchableOpacity} from "react-native";
 
+import {globalStyles} from '../style/style'
 
-    export default function Index(){
+export default function Index(){
 
-        const router = useRouter()
+    const router = useRouter()
 
-        return (
-            <>
-            <View style={estilo.container}>
-                <Text style={estilo.title}>
-                    Barro-Macaxeira
-                </Text>
-                
-                <TouchableOpacity style={estilo.Button} onPress={() => router.push("./newAccount")}>
-                <Text style={estilo.p}>
-                        Criar Conta
-                </Text>
-                </TouchableOpacity>
-
-                <TouchableOpacity style={estilo.Button} onPress={() => router.push("./settings")}>
-                <Text style={estilo.p}>
-                        Fazer Login
-                </Text>
-                </TouchableOpacity>
-            </View>
+    return (
+        <>
+        <View style={globalStyles.containerIndex}>
+            <Text style={globalStyles.titleIndex}>
+                Barro-Macaxeira
+            </Text>
             
+            <TouchableOpacity style={globalStyles.Button} onPress={() => router.push("./newAccount")}>
+            <Text style={globalStyles.p}>
+                    Criar Conta
+            </Text>
+            </TouchableOpacity>
 
-            </>
-        )
-    }
+            <TouchableOpacity style={globalStyles.Button} onPress={() => router.push("./settings")}>
+            <Text style={globalStyles.p}>
+                    Fazer Login
+            </Text>
+            </TouchableOpacity>
+        </View>
+        
 
-    const estilo = StyleSheet.create({
-        container:{
-            flex: 1,
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: 50
-        },
-
-        title:{
-            fontSize: 30,
-            color: 'blue',
-            fontWeight: "bold"
-        },
-
-        Button:{
-            width: 230,
-            backgroundColor: 'blue',
-
-            alignItems: 'center',
-            padding: 15,
-            borderRadius: 10
-        },
-
-        titleData:{
-            fontSize: 25,
-            color: 'white'
-        },
-
-        p:{
-            color: 'white',
-            fontSize: 15,
-        }
-    })
+        </>
+    )
+}

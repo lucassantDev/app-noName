@@ -1,5 +1,7 @@
 import { useRouter } from "expo-router";
-import {Text, StyleSheet, View, TouchableOpacity, TextInput} from "react-native";
+import {Text, View, TouchableOpacity, TextInput} from "react-native";
+
+import {globalStyles} from '../style/style'
 
 export default function newAccount(){
 
@@ -7,11 +9,40 @@ export default function newAccount(){
 
     return(
         <>
-            <View>
-                <Text>Tela de Login</Text>
-                <TouchableOpacity onPress={()=> router.back()}>
-                    Retornar a tela inicial
-                </TouchableOpacity>
+            <View style={globalStyles.container}>
+                <Text style={globalStyles.titleLogin}>Realize o login!</Text>
+
+                <View style={globalStyles.inputsView}>
+                    <TextInput
+                        style={globalStyles.input}
+                        placeholder="Nome"
+                    />
+
+                    <TextInput
+                        style={globalStyles.input}
+                        placeholder="Sobrenome"
+                    />
+                    <TextInput
+                        style={globalStyles.input}
+                        placeholder="E-mail"
+                    />
+
+                    <TextInput
+                        style={globalStyles.input}
+                        placeholder="Senha"
+                    />
+                    <TextInput
+                        style={globalStyles.input}
+                        placeholder="Confirme a senha novamente"
+                    />
+
+                    <TouchableOpacity style={globalStyles.Button} onPress={()=> router.back()}>
+                        <Text style={globalStyles.p}>Entrar</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={globalStyles.Button} onPress={()=> router.back()}>
+                        <Text style={globalStyles.p}>Retornar a tela inicial</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
         </>
     )
