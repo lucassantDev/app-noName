@@ -20,7 +20,7 @@ export default function Index(){
             </Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={globalStyles.Button} onPress={() => router.push("./settings")}>
+            <TouchableOpacity style={globalStyles.Button} onPress={() => router.push("./loginUser")}>
             <Text style={globalStyles.p}>
                     Fazer Login
             </Text>
