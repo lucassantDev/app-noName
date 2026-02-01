@@ -1,7 +1,9 @@
 import { StyleSheet } from "react-native";
 
 export const globalStyles = StyleSheet.create({
+    
     containerIndex:{
+        backgroundColor: '#222222',
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
@@ -17,6 +19,7 @@ export const globalStyles = StyleSheet.create({
     },
 
      container:{
+        backgroundColor: '#222222',
         height: '100%',
         flex: 1,
         alignItems: 'center',
@@ -25,7 +28,7 @@ export const globalStyles = StyleSheet.create({
 
     titleIndex:{
         fontSize: 30,
-        color: 'blue',
+        color: '#FFFFFF',
         fontWeight: "bold"
     },
     
@@ -37,12 +40,17 @@ export const globalStyles = StyleSheet.create({
         borderRadius: 10,
         borderColor: 'blue',
         marginBottom: 10,
+        
+        backgroundColor: '#FFFFFF',
+        color: '#FFFFFF',
 
     },
 
     Button:{
         width: '90%',
-        backgroundColor: 'blue',
+        backgroundColor: '#10167D',
+        borderWidth: 1,
+        borderColor: '#FFFFFF',
 
         alignItems: 'center',
         padding: 15,
@@ -54,14 +62,15 @@ export const globalStyles = StyleSheet.create({
     titleLogin:{
         fontSize: 30,
         fontWeight: 'bold',
-        color: 'blue',
+        color: '#FFFFFF',
         marginTop: 10,
         marginBottom: 40
     },
 
     p:{
-        color: 'white',
+        color: '#FFFFFF',
         fontSize: 15,
+        fontWeight: 'bold',
     },
 
     inputsView:{
