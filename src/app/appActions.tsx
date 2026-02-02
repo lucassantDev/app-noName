@@ -5,7 +5,7 @@ export default function appActions(){
     return (
         <>
             <View style={globalStyles.container}>
-                <View>
+                <View style={appActionsStyle.viewInitial}>
                     <TouchableOpacity style={appActionsStyle.imgUser}>
                         {/* imagem de perfil */}
                     </TouchableOpacity>
@@ -23,6 +23,13 @@ export default function appActions(){
 }
 
 const appActionsStyle = StyleSheet.create({
+    viewInitial:{
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'space-evenly',
+        width: '100%',
+        height: 250,
+    },
     imgUser:{
         width: 60,
         height: 60,
