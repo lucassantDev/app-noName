@@ -42,7 +42,7 @@ export const globalStyles = StyleSheet.create({
         marginBottom: 10,
         
         backgroundColor: '#FFFFFF',
-        color: '#FFFFFF',
+        color: '#10167D',
 
     },
 
