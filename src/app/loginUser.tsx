@@ -18,7 +18,6 @@ export default function loginUser(){
         }
     }
 
-
     return(
         <>
             <View style={globalStyles.container}>
