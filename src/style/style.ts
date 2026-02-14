@@ -29,7 +29,8 @@ export const globalStyles = StyleSheet.create({
     titleIndex:{
         fontSize: 30,
         color: '#FFFFFF',
-        fontWeight: "bold"
+        // fontWeight: "bold",
+        fontFamily: 'ZalandoSansExpanded.ttf',
     },
     
     input:{
