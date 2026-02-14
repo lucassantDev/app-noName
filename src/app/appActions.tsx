@@ -19,11 +19,19 @@ export default function appActions(){
                         <Settings/>
                     </TouchableOpacity>
                 </View>
-                <View>
+                <View style={appActionsStyle.displayOptions}>
+                    <View style={appActionsStyle.optionsView}>
+                        <TouchableOpacity style={appActionsStyle.buttonOptionsView}>
+                            <Text>Iniciar nova meta</Text>
+                        </TouchableOpacity>
+                    </View>
+                    <View style={appActionsStyle.optionsView}>
+                        <TouchableOpacity style={appActionsStyle.buttonOptionsView}>
+                            <Text>Metas criadas</Text>
+                        </TouchableOpacity>
+                    </View>
                     <View style={appActionsStyle.optionsView}></View>
-                    <View style={appActionsStyle.optionsView}></View>
-                    <View style={appActionsStyle.optionsView}></View>
-                    <View style={appActionsStyle.optionsView}></View>
+                    {/* <View style={appActionsStyle.optionsView}></View> */}
                 </View>
 
                 <TouchableOpacity style={globalStyles.Button} onPress={()=> router.back()}>
@@ -70,14 +78,29 @@ const appActionsStyle = StyleSheet.create({
         justifyContent: 'center',
     },
     optionsView:{
-        width: 150,
-        height: 150,
+        width: 320,
+        height: 120,
         borderRadius: 20,
         borderWidth: 2,
         borderColor: 'red',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: "center"
     },
     displayOptions:{
+        flex: 1,
+        borderWidth: 2,
+        gap: 15,
+        borderColor: 'blue',
         alignItems: 'center',
+        justifyContent: 'space-evenly',
+        height: '100%',
+    },
+    buttonOptionsView:{
+        backgroundColor: "#FFFFFF",
+        width: 140,
+        padding: 12,
+        alignItems: "center",
+        borderRadius: 20,
     }
-    
 })

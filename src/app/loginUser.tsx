@@ -11,11 +11,11 @@ export default function loginUser(){
     const [senha, setSenha] = useState("")
 
     function actionsScreen(){
-        if(email === 'lucasfdesantana002@gmail.com' && senha === '9090135'){
+        // if(email === 'lucasfdesantana002@gmail.com' && senha === '9090135'){
             router.push("./appActions")
-        }else{
-            alert('Não foi possível acessar sua conta')
-        }
+        // }else{
+        //     alert('Não foi possível acessar sua conta')
+        // }
     }
 
     return(
