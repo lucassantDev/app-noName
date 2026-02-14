@@ -20,7 +20,10 @@ export default function appActions(){
                     </TouchableOpacity>
                 </View>
                 <View>
-
+                    <View style={appActionsStyle.optionsView}></View>
+                    <View style={appActionsStyle.optionsView}></View>
+                    <View style={appActionsStyle.optionsView}></View>
+                    <View style={appActionsStyle.optionsView}></View>
                 </View>
 
                 <TouchableOpacity style={globalStyles.Button} onPress={()=> router.back()}>
@@ -65,5 +68,16 @@ const appActionsStyle = StyleSheet.create({
         marginRight: 25,
         alignItems: 'center',
         justifyContent: 'center',
+    },
+    optionsView:{
+        width: 150,
+        height: 150,
+        borderRadius: 20,
+        borderWidth: 2,
+        borderColor: 'red',
+    },
+    displayOptions:{
+        alignItems: 'center',
     }
+    
 })
